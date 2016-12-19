@@ -1,7 +1,9 @@
-package com.soin.pokemon;
+package com.soin.pokemon.ui.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.soin.pokemon.R;
 
 public class MainActivity extends AppCompatActivity {
 
