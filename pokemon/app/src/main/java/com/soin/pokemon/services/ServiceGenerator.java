@@ -36,7 +36,7 @@ public class ServiceGenerator {
 
     private static final PokemonService USER_SERVICE = createService(PokemonService.class);
 
-    public static PokemonService getArtistsService() {
+    public static PokemonService getPokemonsService() {
         return USER_SERVICE;
     }
 }
