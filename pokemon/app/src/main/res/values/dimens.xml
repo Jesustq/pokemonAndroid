@@ -2,4 +2,30 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="space_default">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_decoration">6dp</dimen>
+
+    <dimen name="general_padding">16dp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="medium_text_size">19sp</dimen>
+
+    <!-- fragment_pokemons -->
+    <dimen name="recycler_column_width">200dp</dimen>
+
+
+
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+
+    <!-- font size -->
+    <dimen name="size_title">22sp</dimen>
+    <dimen name="size_subtitle">16sp</dimen>
+
+    <dimen name="general_button_width">10dp</dimen>
+    <dimen name="general_button_width_relative">45dp</dimen>
+    <dimen name="general_button_height">30dp</dimen>
 </resources>

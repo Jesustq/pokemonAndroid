@@ -1,21 +1,21 @@
 package com.soin.pokemon.callbacks;
 
 import com.soin.pokemon.models.MPokemon;
+import com.soin.pokemon.models.MPokemonResult;
 
 import java.util.List;
 
 /**
- * Created by Chus on 19/12/2016.
+ * Created by Chus on 26/12/2016.
  */
 
-public interface PokemonCallback {
+public interface PokemonSearchCallback {
 
-    void onResponse(MPokemon pokemons);
+    void onResponse(List<MPokemonResult> pokemons);
 
     void onPokemonNotFound();
 
     void onNetworkConnectionError();
 
     void onServerError();
-
 }

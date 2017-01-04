@@ -1,16 +1,21 @@
 package com.soin.pokemon.models;
 
+import com.google.gson.annotations.SerializedName;
+
+import org.parceler.Parcel;
+
 /**
  * Created by Chus on 18/12/2016.
  */
 
+@Parcel(Parcel.Serialization.BEAN)
 public class MAbilities {
 
-    private String is_hidden;
+    @SerializedName("is_hidden") private String is_hidden;
 
-    private String slot;
+    @SerializedName("slot") private String slot;
 
-    private MAbility ability;
+    @SerializedName("ability")  private MAbility ability;
 
     public String getIs_hidden ()
     {

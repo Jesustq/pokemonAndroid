@@ -1,6 +1,7 @@
 package com.soin.pokemon.services;
 
 import com.soin.pokemon.commons.Constants;
+import com.soin.pokemon.models.MPokemon;
 import com.soin.pokemon.models.MPokemonSearch;
 
 import retrofit2.http.GET;
@@ -19,6 +20,6 @@ public interface PokemonService {
             @Query(Constants.QUERY_SEARCH) String limit);
 
     @GET(Constants.POKEMON_DETAIL_SEARCH)
-    Observable<MPokemonSearch> searchPokemon(
+    Observable<MPokemon> searchPokemon(
             @Path(Constants.POKEMON_PATH) String pokemonId);
 }

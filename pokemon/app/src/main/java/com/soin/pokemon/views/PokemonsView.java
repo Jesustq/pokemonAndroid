@@ -14,11 +14,11 @@ public interface PokemonsView {
 
     void hideLoading();
 
-    void showArtistNotFoundMessage();
+    void showPokemonNotFoundMessage();
 
     void showConnectionErrorMessage();
 
     void showServerError();
 
-    void renderArtists(List<MPokemon> pokemons);
+    void renderPokemons(List<MPokemon> pokemons);
 }
