@@ -44,7 +44,7 @@ public class PokemonsFragment extends Fragment implements PokemonsView {
         pokemonPresenter.setView(this);
         Log.d(TAG,"va a entrar a la busqueda");
         pokemonPresenter.onSearchPokemon();
-        pokemonPresenter.onResultPokemon();
+        //pokemonPresenter.onResultPokemon();
     }
 
     @Nullable @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,

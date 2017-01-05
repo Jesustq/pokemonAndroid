@@ -1,5 +1,7 @@
 package com.soin.pokemon.services;
 
+import java.util.concurrent.TimeUnit;
+
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -18,7 +20,8 @@ public class ServiceGenerator {
 // set your desired log level
 
 
-    private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder().addInterceptor(logging);
+    private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder().readTimeout(60, TimeUnit.SECONDS)
+            .connectTimeout(60, TimeUnit.SECONDS).addInterceptor(logging);
 
 
 

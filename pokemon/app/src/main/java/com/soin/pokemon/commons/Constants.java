@@ -11,7 +11,7 @@ public class Constants {
     public static final String POKEMON_DETAIL_SEARCH = "v2/pokemon/{pokemonId}";
     public static final String POKEMON_PATH = "pokemonId";
     public static final String QUERY_SEARCH = "limit";
-    public static final String QUERY_PARAMETER = "2";
+    public static final String QUERY_PARAMETER = "151";
     public static final String POKEMON_OFFSET = "33";
     public static final String POKEMON_IMAGE_URL = "https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/#.png";
 

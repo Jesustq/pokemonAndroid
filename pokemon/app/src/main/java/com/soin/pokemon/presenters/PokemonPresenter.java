@@ -48,6 +48,7 @@ public class PokemonPresenter implements Presenter<PokemonsView>, PokemonCallbac
        // pokemonsMvpView.renderPokemons(pokemonsList);
         Log.d(TAG,"onResponse" + pokemons);
         pokemonResults = pokemons;
+        this.onResultPokemon();
     }
 
     public void onSearchPokemon() {
@@ -55,13 +56,13 @@ public class PokemonPresenter implements Presenter<PokemonsView>, PokemonCallbac
     }
 
     public void onResultPokemon() {
-
-       // for (MPokemonResult result : pokemonResults) {
-         //     pokemonInteractor.loadDataFromApi(result.getUrl(),this);
-           // }
-             //pokemonsMvpView.hideLoading();
-             //pokemonsMvpView.renderPokemons(pokemonsList);
         Log.d(TAG,"onResult" + pokemonResults);
+        for (MPokemonResult result : pokemonResults) {
+              pokemonInteractor.loadDataFromApi(result.getUrl(),this);
+            }
+             pokemonsMvpView.hideLoading();
+             pokemonsMvpView.renderPokemons(pokemonsList);
+
     }
 
     @Override
